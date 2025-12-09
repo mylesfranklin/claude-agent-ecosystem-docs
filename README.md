@@ -41,6 +41,8 @@ This repository serves as the **home base** for advanced Claude Code development
 |----------|-------------|------------------|
 | [Quick Start Guide](consolidated-references/quick-start-guide.md) | 5-minute setup | You're new to Claude Code |
 | [Ecosystem Overview](consolidated-references/ecosystem-overview.md) | Complete landscape | You want the big picture |
+| [**MCP Overview**](mcp/overview.md) | Universal tool integration | You want to supercharge Claude Code |
+| [**Cutting-Edge MCP Servers**](mcp/cutting-edge-servers.md) | Maximum firepower | You want production-ready power-ups |
 | [Skills Overview](skills/overview.md) | Official Skills framework | You want domain superpowers |
 | [Advanced Patterns](consolidated-references/advanced-patterns.md) | Complex architectures | You're building production systems |
 
@@ -51,7 +53,13 @@ This repository serves as the **home base** for advanced Claude Code development
 ```
 claude-agent-ecosystem-docs/
 │
-├── 🎯 skills/                     # Official Anthropic Skills (NEW)
+├── 🔌 mcp/                        # Model Context Protocol (NEW - HOT)
+│   ├── overview.md                # MCP architecture & fundamentals
+│   ├── cutting-edge-servers.md    # Production-ready power servers
+│   ├── integration-patterns.md    # Combining servers effectively
+│   └── development-guide.md       # Build your own MCP servers
+│
+├── 🎯 skills/                     # Official Anthropic Skills
 │   ├── overview.md                # Skills framework introduction
 │   ├── official-skills/           # Document, Dev, Creative skills
 │   ├── skill-development/         # Create your own skills
@@ -86,6 +94,38 @@ claude-agent-ecosystem-docs/
 ---
 
 ## What's Inside
+
+### Model Context Protocol (MCP) - Industry Standard
+
+The universal protocol for AI-tool integration, adopted by **OpenAI, Google DeepMind, and all major AI providers**:
+
+| Document | Description |
+|----------|-------------|
+| [MCP Overview](mcp/overview.md) | Architecture, N+M revolution, core primitives |
+| [Cutting-Edge Servers](mcp/cutting-edge-servers.md) | Production-ready power-ups for Claude Code |
+| [Integration Patterns](mcp/integration-patterns.md) | Real-world server combination strategies |
+| [Development Guide](mcp/development-guide.md) | Build custom MCP servers |
+
+**Top Power-Up Servers**:
+
+| Server | Purpose | Superpower |
+|--------|---------|------------|
+| **Sequential Thinking** | Structured reasoning | 54% boost in complex problem-solving |
+| **Memory** | Knowledge graph | Persistent context across sessions |
+| **Context7** | Live documentation | 15,000+ library docs on demand |
+| **Playwright** | Browser automation | Full browser control for testing |
+| **Supabase** | Database control | Natural language database management |
+| **Docker Toolkit** | Container orchestration | 200+ pre-built containerized servers |
+
+```bash
+# Quick install - the Developer Power Stack
+claude mcp add sequential-thinking -s user -- npx -y @modelcontextprotocol/server-sequential-thinking
+claude mcp add memory -s user -- npx -y @modelcontextprotocol/server-memory
+claude mcp add context7 -s user -- npx -y @upstash/context7-mcp@latest
+claude mcp add playwright -s user -- npx -y @executeautomation/playwright-mcp-server
+```
+
+---
 
 ### Official Anthropic Skills (19.9K+ Stars)
 
@@ -233,6 +273,16 @@ claude mcp add <name> <command>
 - [github.com/anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) - Code examples
 - [anthropic.com/engineering](https://anthropic.com/engineering) - Engineering blog
 
+### MCP Protocol Sources
+- [modelcontextprotocol.io](https://modelcontextprotocol.io) - Official MCP specification
+- [github.com/modelcontextprotocol](https://github.com/modelcontextprotocol) - MCP organization
+- [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Reference servers
+- [docker.com/blog/add-mcp-servers-to-claude-code-with-mcp-toolkit](https://www.docker.com/blog/add-mcp-servers-to-claude-code-with-mcp-toolkit/) - Docker MCP Toolkit
+- [github.com/upstash/context7](https://github.com/upstash/context7) - Context7 documentation server
+- [github.com/executeautomation/mcp-playwright](https://github.com/executeautomation/mcp-playwright) - Playwright MCP
+- [github.com/zilliztech/claude-context](https://github.com/zilliztech/claude-context) - Semantic code search
+- [supabase.com/docs/guides/getting-started/mcp](https://supabase.com/docs/guides/getting-started/mcp) - Supabase MCP
+
 ### Framework Sources
 - [github.com/obra/superpowers](https://github.com/obra/superpowers) - Superpowers framework
 
@@ -240,6 +290,8 @@ claude mcp add <name> <command>
 - [github.com/ruvnet/claude-flow](https://github.com/ruvnet/claude-flow) - Enterprise orchestration
 - [github.com/awattar/claude-code-best-practices](https://github.com/awattar/claude-code-best-practices) - Best practices
 - [github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know) - Comprehensive guide
+- [mcp.so](https://mcp.so) - MCP Server Registry
+- [smithery.ai](https://smithery.ai) - MCP Server Directory
 
 ---
 
@@ -256,6 +308,9 @@ claude mcp add <name> <command>
 
 | Task | Reference |
 |------|-----------|
+| **Add MCP servers** | [Cutting-Edge Servers](mcp/cutting-edge-servers.md) |
+| **Build custom MCP server** | [MCP Development Guide](mcp/development-guide.md) |
+| **Combine MCP servers** | [Integration Patterns](mcp/integration-patterns.md) |
 | Generate documents | [Document Skills](skills/official-skills/document-skills.md) |
 | Build MCP servers | [Development Skills](skills/official-skills/development-skills.md) |
 | Create custom skills | [Creating Skills](skills/skill-development/creating-skills.md) |
@@ -268,6 +323,7 @@ claude mcp add <name> <command>
 ### For Research
 
 Browse by topic:
+- **MCP Protocol**: `mcp/` - Universal tool integration
 - **Skills Framework**: `skills/`
 - **Agent Architecture**: `cookbooks/agent-patterns/`
 - **Development Practices**: `superpowers/`
@@ -294,4 +350,4 @@ This documentation repository is for reference purposes. Individual source mater
 ---
 
 **Last Updated**: December 2025
-**Version**: 2.1.0
+**Version**: 2.2.0 (MCP Deep Dive)
